@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Nos animaux</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/animaux.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+		
+		<style>
+			blockquote {
+				background-color: #AAF;
+				float: left;
+				clear: left;
+				padding: 10px;
+				border: 3px solid black;
+				font-family: Georgia, Times, serif;
+				quotes: '"' '"';
+			}
+			
+			blockquote::before {
+				content: open-quote;
+			}
+			blockquote::after {
+				content: close-quote;
+			}
+			
+			.trump {
+				background-color: red;
+				color: #009;
+			}
+		</style>
+    </head>
+    <body>
+		<nav id="menu"></nav>
+		
+		
+		<p>
+			<blockquote cite="http://www.nasa.com">
+				Le meilleur site depuis Facebook.<br />
+				<cite>- La NASA</cite>
+			</blockquote>
+			
+			
+			<blockquote cite="http://www.donald-trump.com" class="trump">
+				Oh mon dieu! Et la le mec il me parle de www.animaux.com, c'était vraiment un truc incroyable.<br />
+				<cite>- Donald Trump</cite>
+			</blockquote>
+		</p>
+		
+		
+		<p><a class="ancre_menu" href="#menu"><img id="ancre" src="ancre.png"/></a></p>			
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/ancre.js"></script>
+	</body>
+</html>
