@@ -36,7 +36,8 @@ iframe {
 }
 
 #contenu p {
-	text-align: center;
+	/*text-align: center;*/
+	margin: 1.5%;
 }
 
 .ancre_menu {
@@ -56,10 +57,46 @@ h1 {
 	padding-bottom: 15px;
 }
 
+table {
+	width: 96%;
+	border: 3px solid #FA8258;
+	padding: 1%;
+	margin: 1%;
+	border-radius: 16px;
+}
 
+#bouton {
+	background-color: #0B6138;
+	color: #F7F8E0;
+	margin: 0;
+	margin-right: 74%; /* ça marche pas */
+	border-radius: 16px;
+}
 
+#bouton a:link {
+	color: #F7F8E0; /*brown*/
+	text-decoration: none;
+}
 
+#bouton a:active {
+	color: #F7F8E0;
+	text-decoration: none;
+	
+}
 
+#bouton a:visited {
+	color: #F7F8E0;
+	text-decoration: none;
+}
+
+#imganimal {
+	width: 20%;
+	border-radius: 16px;
+}
+
+h2, h4 {
+	margin-left: 2%;
+}
 
 
 
