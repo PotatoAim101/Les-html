@@ -1,0 +1,79 @@
+
+@keyframes el_menu {
+	
+	from {
+		
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+}
+
+body {
+	
+	background-attachment: fixed;
+	/*background-image: url('ptitbg.png'); */
+}
+nav {
+	/* background-color: grey; */
+	/*background-image: url('coeurs.jpg');*/
+	background-color: #9F81F7; /*ou ff6666 ou 00cc66 ou 6699ff ou 9966ff*/
+	background-size: 60px;
+	color: #61210B; /*brown*/
+}
+
+/*nav:hover {
+	background-color: #8258FA;
+} moche */
+
+nav > ul {
+	padding: 10px 5px;
+	/* background-color: cyan; */
+}
+
+nav > ul > li {
+	display: inline-block;
+	padding: 5px;
+	border-right: 1px solid #61210B;
+	padding-right: 5px;
+}
+
+nav > ul > li > ul {
+	display: none;
+	list-style-type: none;
+	padding: 5px;
+	position: absolute;
+	background-color: #D0A9F5; /*violet*/
+	border: 2px solid #9F81F7;
+}
+
+nav > ul > li:hover > ul {
+	display: block;
+	animation-name: el_menu;
+	animation-duration: 500ms;
+}
+
+nav > ul > li > ul > li {
+	
+	padding-bottom: 4px;
+}
+
+footer {
+	text-align: center;
+}
+
+
+li a:link {
+	color: #61210B; /*brown*/
+	text-decoration: none;
+}
+
+li a:active {
+	color: #61210B;
+	text-decoration: none;
+	
+}
+
+li a:visited {
+	color: #61210B;
+	text-decoration: none;
+}
