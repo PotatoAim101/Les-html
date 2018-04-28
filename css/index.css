@@ -17,7 +17,7 @@ iframe {
 }
 
 #contenu div:nth-child(1) {
-	background-color: #F78181; /*pink*/
+	background-color: #F78181; /*pink*  ou #c94c4c */
 	width: 14%;
 	height: inherit;
 	overflow: auto;
@@ -65,11 +65,11 @@ table {
 	border-radius: 16px;
 }
 
-#bouton {
+#bouton a {
 	background-color: #0B6138;
 	color: #F7F8E0;
-	margin: 0;
-	margin-right: 74%; /* ça marche pas */
+	padding-right: 1%;
+	padding-left: 1%;
 	border-radius: 16px;
 }
 
@@ -87,6 +87,10 @@ table {
 #bouton a:visited {
 	color: #F7F8E0;
 	text-decoration: none;
+}
+
+#bouton a:hover {
+	background-color: #04B486; /* #088A68 */
 }
 
 #imganimal {
