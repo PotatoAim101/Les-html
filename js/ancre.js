@@ -1,12 +1,15 @@
 
-var str = '';
+function bourrer() {
+	var str = '';
 
-for(var i = 0; i < 300; ++i) {
+	for(var i = 0; i < 300; ++i) {
+		
+		str += "<br>";
+	}
 	
-	str += "<br>";
+	$(document.body).append(str);
 }
 
-$(document.body).append(str);
 $(document).scroll(function() {
 	
 	
