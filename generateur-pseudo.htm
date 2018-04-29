@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Générateur de nom</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/animaux.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    </head>
+    <body>
+		<h1>Pseudo</h1>
+		<nav id="menu"></nav>
+		
+		
+		<button onclick="generer()">Nom aléatoire</button>
+		<input id='resultat' type="text" placeholder='Prénom personalisé' readonly/>
+		
+		<p><a class="ancre_menu" href="#menu"><img id="ancre" src="ancre.png"/></a></p>			
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/ancre.js"></script>
+		
+		<script>		
+			var res = document.getElementById('resultat');
+			var parts = ['lulu', 'huhu', 'kra', 'bibi', 'lamu', 'crepy', 'dirty', 'vausi', 'momi', 'popy'];
+			var MAX_PARTS = 5;
+			var MIN_PARTS = 2;
+			
+			function generer() {
+			
+				var nb = MIN_PARTS + parseInt(Math.random() * (MAX_PARTS - MIN_PARTS + 1));
+				var pseudo = '';
+				var i;
+				
+				for(i = 0; i < nb; ++i) {
+				
+					var j = parseInt(Math.random() * parts.length);
+					pseudo += parts[j];
+				}
+				
+				// Première lette en majuscule
+				pseudo = pseudo.charAt(0).toUpperCase() + pseudo.substr(1);
+				
+				res.value = pseudo;
+			}
+		</script>
+	</body>
+</html>
