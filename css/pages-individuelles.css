@@ -7,11 +7,21 @@ table {
 	/* border: solid black; */
 }
 
+td {
+	width: 33%;
+}
+
 img.chat {
 	width: 95%;
 	border-radius: 16px;
 }
 
-table {
+/*table {
 	text-align: left;
+}*/
+
+h3 {
+	text-align: center;
+	padding: none;
+	padding-top: 2%;
 }
