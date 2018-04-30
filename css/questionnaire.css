@@ -12,3 +12,33 @@ table {
 	background-color: lightblue;
 	border: solid 1px brown;
 }
+
+@keyframes pourcentage {
+
+	from {
+		opacity: 0;
+		width: 0;
+	}
+}
+
+.resultat {
+	
+	white-space: nowrap;
+	text-align: left !important; /* important car intérfère avec animaux.css */
+	padding: 0.2em 0.5em;
+	margin: 1em 10px;
+	background-color: rgba(200, 180, 0, 0.7);
+	
+	/* animation-name en JS */
+	animation-duration: 0.9s;
+	animation-iteration-count: 1;
+}
+
+
+/* définir meilleur_resultat en dernier pour que ses attributs écrasent resultat */
+
+.meilleur_resultat {
+
+	font-weight: bold;
+	background-color: red;
+}

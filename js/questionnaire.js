@@ -1,11 +1,14 @@
-var chien = 5;
-var chat = 5;
-var rongeur = 5;
-var snake = 5;
-var tarantule = 5;
-var cheval = 5;
+$("#formulaire").submit(function(e){
+	
+	e.preventDefault(); // empêcher de rediriger vers une autre page
 
-$("#formulaire").submit(function(){
+	var chien = 5;
+	var chat = 5;
+	var rongeur = 5;
+	var snake = 5;
+	var tarantule = 5;
+	var cheval = 5;
+	
 	if ($( "input[ value='chat']" ).is(":checked")) { // ou .prop("ckecked") == true
 		rongeur -= 1;
 		chien -= 1;
@@ -192,11 +195,13 @@ $("#formulaire").submit(function(){
 	rongeur = (rongeur*100)/res;
 	rongeur = Math.round(rongeur*100)/100;
 	
+
 	//pour les classer du plus grand au plus petit
 	var tab = [];
 	tab.push(cheval, chien, chat, rongeur, tarantule, snake);
-	tab.sort();
+	tab.sort(function(a, b) { return b - a; });
 	
+	/*
 	//je sais pas comment mettre le tableau class? ici mais de toute
 	//fa?on tu voulais mettre les resultats dans une page appart non?
 	alert("chien = "+chien+"%"+"\n"+
@@ -206,4 +211,24 @@ $("#formulaire").submit(function(){
 			"tarentule ="+tarantule+"%"+"\n"+
 			"cheval ="+cheval+"%"+"\n"
 	);
+	*/
+
+	var noms = ['Chien', 'Chat', 'Serpent', 'Rongeur', 'Tarentule', 'Cheval'];
+	var ids = ['chien', 'chat', 'snake', 'rongeur', 'tarentule', 'cheval'];
+	var values = [chien, chat, snake, rongeur, tarantule, cheval];
+	var i;
+	
+	for(i = 0; i < ids.length; ++i) {
+		
+		$('#' + ids[i]).html(noms[i] + ' : ' + values[i] + '%')
+		   .css("animation-name", "none") // trick pour restart l'animation
+		   .css("width", values[i] + '%') // on modifie la width ici pour forcer le re-chargement de l'affichage
+		   .css("animation-name", "pourcentage")
+		   .attr('class', 'resultat');
+		  
+		if(values[i] >= tab[0]) {
+		
+			$('#' + ids[i]).addClass('meilleur_resultat');	
+		}
+	}
 });
