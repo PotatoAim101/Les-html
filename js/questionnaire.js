@@ -155,7 +155,7 @@ $("#formulaire").submit(function(){
 		cheval -=1;
 	}
 	
-	if ($( "input[ value='35']" ).is(":checked")) {
+	if ($( "input[ value='65']" ).is(":checked")) {
 		chat += 1;
 		chien += 1;
 		cheval -=1;
@@ -170,6 +170,10 @@ $("#formulaire").submit(function(){
 	if ($( "input[ value='rats']" ).is(":checked")) {
 		tarantule -= 3;
 		snake -= 3;
+	}
+	
+	if ($( "input[ value='sortir']" ).is(":checked")) {
+		chien -= 2;
 	}
 	
 	/*//transformer en pourcentage
