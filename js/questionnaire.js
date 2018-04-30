@@ -182,12 +182,23 @@ $("#formulaire").submit(function(){
 	res += cheval+chat+chien+tarantule+snake+rongeur;
 
 	cheval = (cheval*100)/res;
+	cheval = Math.round(cheval*100)/100; //pour afficher 2 d?cimales seulement
 	chat = (chat*100)/res;
+	chat = Math.round(chat*100)/100;
 	chien = (chien*100)/res;
-	tarantule = (tarantule*100)/res;
+	chien = Math.round(chien*100)/100;
 	snake = (snake*100)/res;
+	snake = Math.round(snake*100)/100;
 	rongeur = (rongeur*100)/res;
+	rongeur = Math.round(rongeur*100)/100;
 	
+	//pour les classer du plus grand au plus petit
+	var tab = [];
+	tab.push(cheval, chien, chat, rongeur, tarantule, snake);
+	tab.sort();
+	
+	//je sais pas comment mettre le tableau class? ici mais de toute
+	//fa?on tu voulais mettre les resultats dans une page appart non?
 	alert("chien = "+chien+"%"+"\n"+
 			"chat ="+chat+"%"+"\n"+
 			"rongeur ="+rongeur+"%"+"\n"+
