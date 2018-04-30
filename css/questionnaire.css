@@ -32,6 +32,7 @@ table {
 	/* animation-name en JS */
 	animation-duration: 0.9s;
 	animation-iteration-count: 1;
+	opacity: 0.5;
 }
 
 
@@ -39,6 +40,5 @@ table {
 
 .meilleur_resultat {
 
-	font-weight: bold;
-	background-color: red;
+	opacity: 1;
 }

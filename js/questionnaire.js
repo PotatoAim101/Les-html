@@ -222,7 +222,7 @@ $("#formulaire").submit(function(e){
 		
 		$('#' + ids[i]).html(noms[i] + ' : ' + values[i] + '%')
 		   .css("animation-name", "none") // trick pour restart l'animation
-		   .css("width", values[i] + '%') // on modifie la width ici pour forcer le re-chargement de l'affichage
+		   .css("width", values[i] * 2 + '%') // on modifie la width ici pour forcer le re-chargement de l'affichage
 		   .css("animation-name", "pourcentage")
 		   .attr('class', 'resultat');
 		  
