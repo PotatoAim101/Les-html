@@ -28,7 +28,7 @@
 			Les carrés vous permettent de faire plusieurs choix, et les cercle vous permettent de faire un choix unique.
 			</p>
 			
-			<form id="formulaire">
+			<form name="formulaire" id="formulaire">
 			<table>
 				<tr>
 					<td>Formulaire de saisie
@@ -63,15 +63,15 @@
 							<tr>
 								<td>De type :</td>
 								<td colspan=3>
-									<input type="checkbox" name="2">Chat
+									<input type="checkbox" name="type" value="chat">Chat
 									<br>
-									<input type="checkbox" name="2">Chien
+									<input type="checkbox" name="type" value="chien">Chien
 									<br>
-									<input type="checkbox" name="2">Rongeur
+									<input type="checkbox" name="type" value="rongeur">Rongeur
 									<br>
-									<input type="checkbox" name="2">Autre
+									<input type="checkbox" name="type" value="autre">Autre
 									<br>
-									<input type="checkbox" name="2">Aucun
+									<input type="checkbox" name="type" value="aucun">Aucun
 								</td>
 							</tr>
 							
@@ -108,89 +108,89 @@
 							<tr>
 								<td>Vous vivez dans :</td>
 								<td colspan=3>
-									<input type="radio" name="habitation">Petit Appartement
+									<input type="radio" name="habitation" value="pappart" >Petit Appartement
 									<br>
-									<input type="radio" name="habitation">Grand Appartement
+									<input type="radio" name="habitation" value="gappart">Grand Appartement
 									<br>
-									<input type="radio" name="habitation">Petite maison
+									<input type="radio" name="habitation" value="pmaison">Petite maison
 									<br>
-									<input type="radio" name="habitation">Grande maison
+									<input type="radio" name="habitation" value="gmaison">Grande maison
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Votre personnalité :</td>
 								<td colspan=3>
-									<input type="checkbox" name="personnalité">Gentil mais peureux
+									<input type="checkbox" name="personnalité" value="gentil">Gentil mais peureux
 									<br>
-									<input type="checkbox" name="personnalité">Fidèle et attentionné
+									<input type="checkbox" name="personnalité" value="fidele" >Fidèle et attentionné
 									<br>
-									<input type="checkbox" name="personnalité">Original et intriguant
+									<input type="checkbox" name="personnalité" value="original">Original et intriguant
 									<br>
-									<input type="checkbox" name="personnalité">indépandant
+									<input type="checkbox" name="personnalité" value="indep">indépandant
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Vous avez :</td>
 								<td colspan=3>
-									<input type="radio" name="temps">Beaucoup de temps libre
+									<input type="radio" name="temps" value="bcp">Beaucoup de temps libre
 									<br>
-									<input type="radio" name="temps">Beaucoup de travail/études
+									<input type="radio" name="temps" value="pasbcp">Beaucoup de travail/études
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Quel est votre plus grande peur :</td>
 								<td colspan=3>
-									<input type="checkbox" name="peur">Les insectes
+									<input type="checkbox" name="peur" value="insectes">Les insectes
 									<br>
-									<input type="checkbox" name="peur">L'obscurité
+									<input type="checkbox" name="peur" value="dark">L'obscurité
 									<br>
-									<input type="checkbox" name="peur">Les rats
+									<input type="checkbox" name="peur" value="rat">Les rats
 									<br>
-									<input type="checkbox" name="peur">Être seul
+									<input type="checkbox" name="peur" value="seul">Être seul
 									<br>
-									<input type="checkbox" name="peur">Les grands escpaces vides
+									<input type="checkbox" name="peur" value="vide">Les grands escpaces vides
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Pour vous un animal de compagnie sert à :</td>
 								<td colspan=3>
-									<input type="radio" name="sert">Vous occuper
+									<input type="radio" name="sert" valuer="occuper">Vous occuper
 									<br>
-									<input type="radio" name="sert">Vous accompagner dans votre vie
+									<input type="radio" name="sert" value="accompagner">Vous accompagner dans votre vie
 									<br>
-									<input type="radio" name="sert">Vous intriguer, et vous étonner
+									<input type="radio" name="sert" value="intriguer">Vous intriguer, et vous étonner
 									<br>
-									<input type="radio" name="sert">Rendre sa vie meilleure grâce à vous
+									<input type="radio" name="sert" value="mieux">Rendre sa vie meilleure grâce à vous
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Idéalement, votre animal de compagnie doit :</td>
 								<td colspan=3>
-									<input type="checkbox" name="ildoit">Suivre votre rythme de vie
+									<input type="checkbox" name="ildoit" value="rythme">Suivre votre rythme de vie
 									<br>
-									<input type="checkbox" name="ildoit">Vous occuper
+									<input type="checkbox" name="ildoit" value="occuper">Vous occuper
 									<br>
-									<input type="checkbox" name="ildoit">Soit à vos côtés
+									<input type="checkbox" name="ildoit" value="accompagner">Soit à vos côtés
 									<br>
-									<input type="checkbox" name="ildoit">Se débrouiller sans vous
+									<input type="checkbox" name="ildoit" value="intriguer">Se débrouiller sans vous
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Combien aimeriez-vous dépenser par moi ?</td>
 								<td colspan=3>
-									<input type="radio" name="prix">Moins de 25€
+									<input type="radio" name="prix" value="25">Moins de 25€
 									<br>
-									<input type="radio" name="prix">Entre 25 et 35€
+									<input type="radio" name="prix" value="35">Entre 25 et 35€
 									<br>
-									<input type="radio" name="prix">Entre 35 et 65€
+									<input type="radio" name="prix" value="65">Entre 35 et 65€
 									<br>
-									<input type="radio" name="prix">Pas de budget
+									<input type="radio" name="prix" value="8">Pas de budget
 								</td>
 							</tr>
 							
@@ -199,24 +199,24 @@
 								<td colspan=3>
 									<input type="radio" name="cleaning">Normal
 									<br>
-									<input type="radio" name="cleaning">Hyper maniaque
+									<input type="radio" name="cleaning" value="tres">Hyper maniaque
 									<br>
 									<input type="radio" name="cleaning">Un peu désorganisé
 									<br>
-									<input type="radio" name="cleaning">Très organisé
+									<input type="radio" name="cleaning" value="tres">Très organisé
 								</td>
 							</tr>
 							
 							<tr>
 								<td>Il est contraignant pour vous de :</td>
 								<td colspan=3>
-									<input type="checkbox" name="contrainte">Devoir nettoyer les bêtise de votre animal
+									<input type="checkbox" name="contrainte" value="betises">Devoir nettoyer les bêtise de votre animal
 									<br>
-									<input type="checkbox" name="contrainte">Faire face aux allergies
+									<input type="checkbox" name="contrainte" value="allergie">Faire face aux allergies
 									<br>
-									<input type="checkbox" name="contrainte">Devoir le sortir tous les jours
+									<input type="checkbox" name="contrainte" value="sortir">Devoir le sortir tous les jours
 									<br>
-									<input type="checkbox" name="contrainte">Lui fournir des insectes/rats
+									<input type="checkbox" name="contrainte" value="rats">Lui fournir des insectes/rats
 									<br>
 									<input type="checkbox" name="contrainte">Pas de contraintes
 								</td>
@@ -271,9 +271,205 @@
 		<p><a class="ancre_menu" href="#titre"><img id="ancre" src="ancre.png"/></a></p>
 		
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script>
+			var chien = 5.0;
+			var chat = 5.0;
+			var rongeur = 5.0;
+			var snake = 5.0;
+			var tarantule = 5.0;
+			var cheval = 5.0;
+
+			$("#formulaire").submit(function(){
+				if ($( "input[ value='chat']" ).is(":checked")) { // ou .prop("ckecked") == true
+					rongeur -= 1;
+					chien -= 1;
+					chat += 1;
+					snake -=1;
+				}
+				
+				if ($( "input[ value='chien']" ).is(":checked")) {
+					chien += 1;
+				}
+				
+				if ($( "input[ value='rongeur']" ).is(":checked")) {
+					rongeur += 2;
+				}
+				
+				if ($( "input[ value='autre']" ).is(":checked")) {
+					tarantule +=1;
+					snake += 1;
+				}
+				
+				if ($( "input[ value='aucun']" ).is(":checked")) {
+					rongeur += 1;
+				}
+				
+				if ($( "input[ value='pappart']" ).is(":checked")) {
+					rongeur += 1;
+					chien -= 1;
+					chat -= 2;
+					snake += 1;
+					cheval -= 4;
+					tarantule += 2;
+				}
+				
+				if (($( "input[ value='gappart']" ).is(":checked")) || ($( "input[ value='pmaison']" ).is(":checked"))) {
+					rongeur += 1;
+					chien += 1;
+					chat += 1;
+					snake += 1;
+					cheval -= 4;
+					tarantule += 1;
+				}
+				
+				if ($( "input[ value='gmaison']" ).is(":checked")) {
+					rongeur += 1;
+					chien += 1;
+					chat += 1;
+					snake += 1;
+					cheval += 1;
+					tarantule += 1;
+				}
+				
+				if ($( "input[ value='gentil']" ).is(":checked")) {
+					chien += 1;
+					chat += 2;
+					tarantule -= 4;
+					snake -= 4;
+				}
+				
+				if ($( "input[ value='fidele']" ).is(":checked")) {
+					cheval += 1;
+					chien += 1;
+					chat += 1;
+				}
+				
+				if ($( "input[ value='original']" ).is(":checked")) {
+					tarantule += 2;
+					snake += 2;
+				}
+				
+				if ($( "input[ value='indep']" ).is(":checked")) {
+					chat += 2;
+				}
+				
+				if ($( "input[ value='bcp']" ).is(":checked")) {
+					chien += 1;
+					cheval += 1;
+					chat += 1;
+					rongeur += 1;
+				}
+				
+				if ($( "input[ value='pasbcp']" ).is(":checked")) {
+					tarantule += 1;
+					snake += 1;
+				}
+				
+				if ($( "input[ value='insectes']" ).is(":checked")) {
+					tarantule -= 4;
+					rongeur -= 1;
+				}
+				
+				if ($( "input[ value='dark']" ).is(":checked")) {
+					chat -= 1;
+				}
+				
+				if ($( "input[ value='rat']" ).is(":checked")) {
+					chat += 1;
+					snake -= 4;
+					rongeur -= 1;
+				}
+				
+				if ($( "input[ value='seul']" ).is(":checked")) {
+					chien += 1;
+					snake -= 1;
+					tarantule -= 1;
+				}
+				
+				if ($( "input[ value='vide']" ).is(":checked")) {
+					cheval -= 2;
+				}
+				
+				if (($( "input[ value='occuper']" ).is(":checked")) || $( "input[ value='accompagner']" ).is(":checked")) {
+					cheval += 1;
+					chien += 2;
+					chat += 2;
+				}
+				
+				if ($( "input[ value='intriguer']" ).is(":checked")) {
+					tarantule += 1;
+					snake += 1;
+				}
+				
+				if ($( "input[ value='mieux']" ).is(":checked")) {
+					chat += 1;
+					chien += 1;
+					cheval += 1;
+				}
+				
+				if ($( "input[ value='mieux']" ).is(":checked")) {
+					chat += 1;
+					chien += 1;
+					cheval += 1;
+				}
+				
+				if ($( "input[ value='rythme']" ).is(":checked")) {
+					rongeur -= 1;
+					cheval -=1;
+				}
+				
+				if ($( "input[ value='25']" ).is(":checked")) {
+					rongeur += 1;
+					tarantule += 1;
+					cheval -=1;
+				}
+				
+				if ($( "input[ value='35']" ).is(":checked")) {
+					snake += 1;
+					cheval -=1;
+				}
+				
+				if ($( "input[ value='35']" ).is(":checked")) {
+					chat += 1;
+					chien += 1;
+					cheval -=1;
+				}
+				
+				if (($( "input[ value='tres']" ).is(":checked")) || ($( "input[ value='betises']" ).is(":checked")) || ($( "input[ value='allergie']" ).is(":checked"))){
+					chat -= 1;
+					cheval -= 1;
+					chien -= 1;
+				}
+				
+				if ($( "input[ value='rats']" ).is(":checked")) {
+					tarantule -= 3;
+					snake -= 3;
+				}
+				
+				/*//transformer en pourcentage
+				
+				apparement ça lui pose probleme je sais pas si c'est parceque il veux pas des float?
+				
+				var res = cheval + chien + chat + rongeur + snake + tarentule;
+				
+				cheval = (cheval*100)/res;
+				chat = (chat*100)/res;
+				chien = (chien*100)/res;
+				tarantule = (tarantule*100)/res;
+				snake = (snake*100)/res;
+				rongeur = (rongeur*100)/res;*/
+				
+				alert("chien = "+chien+"\n"+
+						"chat ="+chat+"\n"+
+						"rongeur ="+rongeur+"\n"+
+						"snake ="+snake+"\n"+
+						"tarentule ="+tarantule+"\n"+
+						"cheval ="+cheval+"\n"
+				);
+			});
+		</script>
 		<script src="js/menu.js"></script>
 		<script src="js/ancre.js"></script>
-		<script src="js/questionnaire.js"></script>
 		<script>
 			$('#contenu').css('height', $('#contenu div:nth-child(2)').css('height'));
 		</script>
