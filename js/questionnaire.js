@@ -176,25 +176,23 @@ $("#formulaire").submit(function(){
 		chien -= 2;
 	}
 	
-	/*//transformer en pourcentage
+	//transformer en pourcentage
 
-	apparement ça lui pose probleme je sais pas si c'est parceque il veux pas des float?
-
-	var res = cheval + chien + chat + rongeur + snake + tarentule;
+	var res = 0.0;
+	res += cheval+chat+chien+tarantule+snake+rongeur;
 
 	cheval = (cheval*100)/res;
 	chat = (chat*100)/res;
 	chien = (chien*100)/res;
 	tarantule = (tarantule*100)/res;
 	snake = (snake*100)/res;
-	rongeur = (rongeur*100)/res;*/
-				
+	rongeur = (rongeur*100)/res;
 	
-	alert("chien = "+chien+"\n"+
-			"chat ="+chat+"\n"+
-			"rongeur ="+rongeur+"\n"+
-			"snake ="+snake+"\n"+
-			"tarentule ="+tarantule+"\n"+
-			"cheval ="+cheval+"\n"
+	alert("chien = "+chien+"%"+"\n"+
+			"chat ="+chat+"%"+"\n"+
+			"rongeur ="+rongeur+"%"+"\n"+
+			"snake ="+snake+"%"+"\n"+
+			"tarentule ="+tarantule+"%"+"\n"+
+			"cheval ="+cheval+"%"+"\n"
 	);
 });
