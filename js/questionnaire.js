@@ -2,12 +2,12 @@ $("#formulaire").submit(function(e){
 	
 	e.preventDefault(); // empêcher de rediriger vers une autre page
 
-	var chien = 5;
-	var chat = 5;
-	var rongeur = 5;
-	var snake = 5;
-	var tarantule = 5;
-	var cheval = 5;
+	var chien = 10;
+	var chat = 10;
+	var rongeur = 10;
+	var snake = 10;
+	var tarentule = 10;
+	var cheval = 10;
 	
 	if ($( "input[ value='chat']" ).is(":checked")) { // ou .prop("ckecked") == true
 		rongeur -= 1;
@@ -25,7 +25,7 @@ $("#formulaire").submit(function(e){
 	}
 	
 	if ($( "input[ value='autre']" ).is(":checked")) {
-		tarantule +=1;
+		tarentule +=1;
 		snake += 1;
 	}
 	
@@ -39,7 +39,7 @@ $("#formulaire").submit(function(e){
 		chat -= 2;
 		snake += 1;
 		cheval -= 4;
-		tarantule += 2;
+		tarentule += 2;
 	}
 	
 	if (($( "input[ value='gappart']" ).is(":checked")) || ($( "input[ value='pmaison']" ).is(":checked"))) {
@@ -48,7 +48,7 @@ $("#formulaire").submit(function(e){
 		chat += 1;
 		snake += 1;
 		cheval -= 4;
-		tarantule += 1;
+		tarentule += 1;
 	}
 	
 	if ($( "input[ value='gmaison']" ).is(":checked")) {
@@ -57,13 +57,13 @@ $("#formulaire").submit(function(e){
 		chat += 1;
 		snake += 1;
 		cheval += 1;
-		tarantule += 1;
+		tarentule += 1;
 	}
 	
 	if ($( "input[ value='gentil']" ).is(":checked")) {
 		chien += 1;
 		chat += 2;
-		tarantule -= 4;
+		tarentule -= 4;
 		snake -= 4;
 	}
 	
@@ -74,7 +74,7 @@ $("#formulaire").submit(function(e){
 	}
 	
 	if ($( "input[ value='original']" ).is(":checked")) {
-		tarantule += 2;
+		tarentule += 2;
 		snake += 2;
 	}
 	
@@ -90,12 +90,12 @@ $("#formulaire").submit(function(e){
 	}
 	
 	if ($( "input[ value='pasbcp']" ).is(":checked")) {
-		tarantule += 1;
+		tarentule += 1;
 		snake += 1;
 	}
 	
 	if ($( "input[ value='insectes']" ).is(":checked")) {
-		tarantule -= 4;
+		tarentule -= 4;
 		rongeur -= 1;
 	}
 	
@@ -112,7 +112,7 @@ $("#formulaire").submit(function(e){
 	if ($( "input[ value='seul']" ).is(":checked")) {
 		chien += 1;
 		snake -= 1;
-		tarantule -= 1;
+		tarentule -= 1;
 	}
 	
 	if ($( "input[ value='vide']" ).is(":checked")) {
@@ -126,7 +126,7 @@ $("#formulaire").submit(function(e){
 	}
 	
 	if ($( "input[ value='intriguer']" ).is(":checked")) {
-		tarantule += 1;
+		tarentule += 1;
 		snake += 1;
 	}
 	
@@ -149,7 +149,7 @@ $("#formulaire").submit(function(e){
 	
 	if ($( "input[ value='25']" ).is(":checked")) {
 		rongeur += 1;
-		tarantule += 1;
+		tarentule += 1;
 		cheval -=1;
 	}
 	
@@ -171,7 +171,7 @@ $("#formulaire").submit(function(e){
 	}
 	
 	if ($( "input[ value='rats']" ).is(":checked")) {
-		tarantule -= 3;
+		tarentule -= 3;
 		snake -= 3;
 	}
 	
@@ -182,7 +182,7 @@ $("#formulaire").submit(function(e){
 	//transformer en pourcentage
 
 	var res = 0.0;
-	res += cheval+chat+chien+tarantule+snake+rongeur;
+	res += cheval+chat+chien+tarentule+snake+rongeur;
 
 	cheval = (cheval*100)/res;
 	cheval = Math.round(cheval*100)/100; //pour afficher 2 d?cimales seulement
@@ -194,11 +194,13 @@ $("#formulaire").submit(function(e){
 	snake = Math.round(snake*100)/100;
 	rongeur = (rongeur*100)/res;
 	rongeur = Math.round(rongeur*100)/100;
+	tarentule = (tarentule*100)/res;
+	tarentule = Math.round(tarentule*100)/100;
 	
 
 	//pour les classer du plus grand au plus petit
 	var tab = [];
-	tab.push(cheval, chien, chat, rongeur, tarantule, snake);
+	tab.push(cheval, chien, chat, rongeur, tarentule, snake);
 	tab.sort(function(a, b) { return b - a; });
 	
 	/*
@@ -208,21 +210,21 @@ $("#formulaire").submit(function(e){
 			"chat ="+chat+"%"+"\n"+
 			"rongeur ="+rongeur+"%"+"\n"+
 			"snake ="+snake+"%"+"\n"+
-			"tarentule ="+tarantule+"%"+"\n"+
+			"tarentule ="+tarentule+"%"+"\n"+
 			"cheval ="+cheval+"%"+"\n"
 	);
 	*/
 
 	var noms = ['Chien', 'Chat', 'Serpent', 'Rongeur', 'Tarentule', 'Cheval'];
 	var ids = ['chien', 'chat', 'snake', 'rongeur', 'tarentule', 'cheval'];
-	var values = [chien, chat, snake, rongeur, tarantule, cheval];
+	var values = [chien, chat, snake, rongeur, tarentule, cheval];
 	var i;
 	
 	for(i = 0; i < ids.length; ++i) {
 		
 		$('#' + ids[i]).html(noms[i] + ' : ' + values[i] + '%')
 		   .css("animation-name", "none") // trick pour restart l'animation
-		   .css("width", values[i] * 2 + '%') // on modifie la width ici pour forcer le re-chargement de l'affichage
+		   .css("width", values[i] + '%') // on modifie la width ici pour forcer le re-chargement de l'affichage
 		   .css("animation-name", "pourcentage")
 		   .attr('class', 'resultat');
 		  
