@@ -4,6 +4,7 @@
 	border: 3px solid brown;
 	background-color: #F4FA58; /*yellow*/
 	width: 70%;
+	margin: auto;
 }
 
 #actus p {
@@ -11,7 +12,7 @@
 	margin: 1.5%;
 }
 
-table {
+#actus article {
 	width: 96%;
 	border: 3px solid #FA8258;
 	padding: 1%;
@@ -47,7 +48,7 @@ table {
 	background-color: #04B486; /* #088A68 */
 }
 
-#imganimal {
+#actus img {
 	width: 20%;
 	border-radius: 16px;
 }
