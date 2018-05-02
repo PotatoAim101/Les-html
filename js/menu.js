@@ -1,1 +1,1 @@
-$('#menu').load('menu.htm');
+$('nav').load('menu.htm');
