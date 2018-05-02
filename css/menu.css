@@ -1,3 +1,9 @@
+h1 {
+	color: #04B45F;
+	font-size: 50px;
+	padding: 20px;
+	padding-bottom: 15px;
+}
 
 @keyframes el_menu {
 	
