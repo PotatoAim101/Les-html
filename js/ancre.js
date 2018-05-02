@@ -11,6 +11,6 @@ function bourrer() {
 
 $(document).scroll(function() {
 	
-	var opacity = Math.min($(document).scrollTop() / 700.0, 1.0);
-	$('.ancre_menu').css('opacity', opacity);//.text($(document).scrollTop());
+	var opacity = Math.min($(document).scrollTop() / 700.0, 1.0); // On évite de dépasser 1.0 en opacité
+	$('.ancre_menu').css('opacity', opacity);
 });
