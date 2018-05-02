@@ -65,7 +65,7 @@ table {
 	border-radius: 16px;
 }
 
-#bouton a {
+.bouton a {
 	background-color: #0B6138;
 	color: #F7F8E0;
 	padding-right: 1%;
@@ -73,23 +73,23 @@ table {
 	border-radius: 16px;
 }
 
-#bouton a:link {
+.bouton a:link {
 	color: #F7F8E0; /*brown*/
 	text-decoration: none;
 }
 
-#bouton a:active {
+.bouton a:active {
 	color: #F7F8E0;
 	text-decoration: none;
 	
 }
 
-#bouton a:visited {
+.bouton a:visited {
 	color: #F7F8E0;
 	text-decoration: none;
 }
 
-#bouton a:hover {
+.bouton a:hover {
 	background-color: #04B486; /* #088A68 */
 }
 
