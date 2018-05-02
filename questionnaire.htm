@@ -1,7 +1,10 @@
 <!doctype html>
 
-<html>
+<html lang="fr">
     <head>
+		<!-- Validé, MAIS une seule erreur qui est un bug de html5 on peut pas corriger -->
+		<!-- L'erreure non corrigé est l.38 -->
+		<!-- aussi je border marche pas l.35-->
         <title>Questionnaire</title>
         <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/animaux.css"/>
@@ -29,15 +32,16 @@
 					<tr>
 						<td>Formulaire de saisie
 
-							<table border width="100%">
+							<table border> <!-- style="{border: 1px solid brown}" -->
+							<!-- style="border: 1px solid brown;" ca marche pas alors que si tu met juste bordder comme avant ça marche.. -->
 								<tr>
 									<td>Nom :</td>
-									<td colspan=3><input type="text"></td>
+									<td colspan="3"><input type="text"></td>
 								</tr>
 								
 								<tr>
 									<td>Prénom :</td>
-									<td colspan=3><input type="text"></td>
+									<td colspan="3"><input type="text"></td>
 								</tr>
 								
 								<!--
@@ -154,7 +158,7 @@
 								<tr>
 									<td>Pour vous un animal de compagnie sert à :</td>
 									<td colspan=3>
-										<input type="radio" name="sert" valuer="occuper">Vous occuper
+										<input type="radio" name="sert" value="occuper">Vous occuper
 										<br>
 										<input type="radio" name="sert" value="accompagner">Vous accompagner dans votre vie
 										<br>
@@ -233,6 +237,7 @@
 			</form>
 		
 			<section id="resultats">
+				<h5>Vos résultats :</h5> <!-- apparement on est obligé de rajouter un hx dans une section -->
 				<p class="resultat" id="chien">Chien</p>
 				<p class="resultat" id="chat">Chat</p>
 				<p class="resultat" id="rongeur">Rongeur</p>
@@ -274,7 +279,7 @@
             <p>&copy; 2018 Inside Corporation</p>
         </footer>
 		
-		<p><a class="ancre_menu" href="#titre"><img id="ancre" src="ancre.png"/></a></p>
+		<p><a class="ancre_menu" href="#titre"><img id="ancre" src="ancre.png" alt="ancre"/></a></p>
 		
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/menu.js"></script>
@@ -285,43 +290,3 @@
 		</script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
