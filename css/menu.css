@@ -1,8 +1,8 @@
 /* ---------------------------------------------- MENU */
 
 h1 {
-	color: #04B45F;
-	font-size: 50px;
+	color: #088A4B;
+	font-size: 55px;
 	padding: 20px;
 	padding-bottom: 15px;
 }
@@ -17,7 +17,7 @@ h1 {
 }
 
 body {
-	
+	background-color: #F8D4D4;
 	background-attachment: fixed;
 	/*background: radial-gradient(red, yellow, green, black);*/               /* pose des problèmes pour les petites pages */
 	/*background-image: url('ptitbg.png'); */
