@@ -5,18 +5,22 @@
 	background-color: #F4FA58; /*yellow*/
 	width: 70%;
 	margin: auto;
+	padding: 1%;
 }
 
-#actus p {
+p {
 	/*text-align: center;*/
-	margin: 1.5%;
+	margin: auto;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 #actus article {
 	width: 96%;
 	border: 3px solid #FA8258;
 	padding: 1%;
-	margin: 1%;
+	margin: 0.5%;
+	margin-bottom: 1%;
 	border-radius: 16px;
 }
 
@@ -54,7 +58,7 @@
 }
 
 h2, h4 {
-	margin-left: 2%;
+	margin-left: 5%;
 }
 
 
