@@ -5,6 +5,7 @@ h1 {
 	font-size: 55px;
 	padding: 20px;
 	padding-bottom: 15px;
+	text-shadow: 1px 1px 1px blue;
 }
 
 @keyframes el_menu {
@@ -22,10 +23,12 @@ body {
 	/*background: radial-gradient(red, yellow, green, black);*/               /* pose des problèmes pour les petites pages */
 	/*background-image: url('ptitbg.png'); */
 }
+
+
 nav {
 	/* background-color: grey; */
 	/*background-image: url('coeurs.jpg');*/
-	background-color: #9F81F7; /*ou ff6666 ou 00cc66 ou 6699ff ou 9966ff*/
+	background-color: #8F71E7; /*ou ff6666 ou 00cc66 ou 6699ff ou 9966ff*/
 	background-size: 60px;
 	color: #61210B; /*brown*/
 }
