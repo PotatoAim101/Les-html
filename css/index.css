@@ -25,6 +25,10 @@ p {
 	background: radial-gradient(red, white);
 }
 
+article h2 {
+	font-style: italic;
+}
+
 #actus p {
 
 	margin-top: 3%;
