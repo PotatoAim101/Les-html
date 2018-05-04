@@ -74,7 +74,10 @@ li a:link {
 li a:active {
 	color: #61210B;
 	text-decoration: none;
-	
+}
+
+li a:hover {
+	text-shadow: 1px 0px 0px black; /* plutôt que bold car bold change la taille du container */
 }
 
 li a:visited {
