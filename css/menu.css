@@ -20,7 +20,7 @@ h1 {
 body {
 	background-color: #F8D4D4;
 	background-attachment: fixed;
-	/*background: radial-gradient(red, yellow, green, black);*/               /* pose des problèmes pour les petites pages */
+	/*background: radial-gradient(red, yellow, green, black);*/         /* pose des problèmes pour les petites pages */
 	/*background-image: url('ptitbg.png'); */
 }
 

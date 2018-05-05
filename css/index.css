@@ -22,11 +22,7 @@ p {
 	margin: 0.5%;
 	margin-bottom: 1%;
 	border-radius: 16px;
-	background: radial-gradient(red, white);
-}
-
-article h2 {
-	font-style: italic;
+	background: radial-gradient(#F2F5A9, #F5A9A9); /*rose à l'exterieur, jaune à l'interieur*/
 }
 
 #actus p {
